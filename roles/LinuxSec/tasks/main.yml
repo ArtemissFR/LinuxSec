@@ -1,1 +1,36 @@
+# --- Gather_Facts --- #
+- include_tasks: "Gather_facts/main.yml"
+# --- Gather_Facts --- #
 
+# --- Configuration_Services --- #
+- include_tasks: "Configuration_Services/main.yml"
+# --- Configuration_Services --- #
+
+# --- Configuration_Users --- #
+- include_tasks: "Configuration_Users/main.yml"
+# --- Configuration_Users --- #
+
+# --- Configuration_Permissions --- #
+- include_tasks: "Configuration_Permissions/main.yml"
+# --- Configuration_Permissions --- #
+
+# --- Configuration_Updates --- #
+- include_tasks: "Configuration_Updates/main.yml"
+# --- Configuration_Updates --- #
+
+# --- Configuration_IDS-IPS --- #
+- include_tasks: "Configuration_IDS-IPS/main.yml"
+# --- Configuration_IDS-IPS --- #
+
+# --- Configuration_Firewall --- #
+- include_tasks: "Configuration_Firewall/main.yml"
+# --- Configuration_Firewall --- #
+
+# --- Configuration_SSH --- #
+- include_tasks: "Configuration_SSH/main.yml"
+# --- Configuration_SSH --- #
+
+
+- name: Result
+  debug:
+     msg: "Your Linux machine has been successfully configured !"
