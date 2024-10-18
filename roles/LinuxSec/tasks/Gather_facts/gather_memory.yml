@@ -1,0 +1,7 @@
+- name: Retrieve memory information
+  command: free -m
+  register: memory_info
+
+- name: Show memory information
+  debug:
+    msg: "Memory information is : {{ memory_info.stdout_lines }}"
