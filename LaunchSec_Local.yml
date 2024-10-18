@@ -3,5 +3,4 @@
   connection: local
 
   roles:
-    - test
-    - test2
+    - LinuxSec
