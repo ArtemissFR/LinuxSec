@@ -1,0 +1,7 @@
+- name: Retrieve the list of running processes
+  command: ps aux
+  register: processes_info
+
+- name: Show list of running processes
+  debug:
+    msg: "The list of running processes is : {{ processes_info.stdout_lines }}"
