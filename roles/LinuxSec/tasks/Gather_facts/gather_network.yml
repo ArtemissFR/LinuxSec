@@ -1,0 +1,7 @@
+- name: Retrieve information about network interfaces
+  command: ip a
+  register: network_info
+  
+- name: View network interface information
+  debug:
+    msg: "Information about network interfaces is : {{ network_info.stdout_lines }}"
