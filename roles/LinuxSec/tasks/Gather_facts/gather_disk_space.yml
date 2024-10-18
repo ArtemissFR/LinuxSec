@@ -1,0 +1,7 @@
+- name: Recover disk space information
+  command: df -h
+  register: disk_info
+
+- name: View disk space information
+  debug:
+    msg: "The disk space information is : {{ disk_info.stdout_lines }}"
