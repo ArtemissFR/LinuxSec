@@ -1,0 +1,7 @@
+- name: Recover the OS from the remote machine
+  command: uname -a
+  register: os_info
+
+- name: Show remote machine OS
+  debug:
+    msg: "The remote machine's OS is : {{ os_info.stdout_lines }}"
