@@ -1,20 +1,34 @@
+# --- Gather_Facts --- #
 - name: Gather Facts
   gather_facts:
+# --- Gather_Facts --- #
 
+# --- Gather_OS_Facts --- #
 - name: Gather OS
   include_tasks: gather_os.yml
+# --- Gather_OS_Facts --- #
 
+# --- Gather_Disk_Facts --- #
 - name: Gather Disk Space
   include_tasks: gather_disk_space.yml
+# --- Gather_Disk_Facts --- #
 
+# --- Gather_Memory_Facts --- #
 - name: Gather Memory
   include_tasks: gather_memory.yml
+# --- Gather_Memory_Facts --- #
 
+# --- Gather_Processor_Facts --- #
 - name: Gather Processor
   include_tasks: gather_processor.yml
+# --- Gather_Processor_Facts --- #
 
+# --- Gather_Processus_Facts --- #
 - name: Gather Processus
   include_tasks: gather_process.yml
+# --- Gather_Processus_Facts --- #
 
+# --- Gather_Network_Facts --- #
 - name: Gather Network
   include_tasks: gather_network.yml
+# --- Gather_Network_Facts --- #
