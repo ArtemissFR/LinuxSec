@@ -6,7 +6,6 @@
 
 1. **Clone the Project:**
    ```bash
-   cd /etc/ansible/roles
    git clone https://github.com/ArtemissFR/LinuxSec
    cd LinuxSec
    ```
